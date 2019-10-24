@@ -10,11 +10,11 @@ public class Todo {
 
     private String nameBudget;
 
-    private int priceBudget;
+    private String priceBudget;
 
     private String descriptionBudget;
 
-    public Todo(String nameBudget, int priceBudget, String descriptionBudget) {
+    public Todo(String nameBudget, String priceBudget, String descriptionBudget) {
         this.nameBudget = nameBudget;
         this.priceBudget = priceBudget;
         this.descriptionBudget = descriptionBudget;
@@ -36,11 +36,11 @@ public class Todo {
         this.nameBudget = nameBudget;
     }
 
-    public int getPriceBudget() {
+    public String getPriceBudget() {
         return priceBudget;
     }
 
-    public void setPriceBudget(int priceBudget) {
+    public void setPriceBudget(String priceBudget) {
         this.priceBudget = priceBudget;
     }
 

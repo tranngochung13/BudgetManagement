@@ -49,7 +49,7 @@ public class UpdateActivity extends AppCompatActivity {
 
         edtName.setText(name);
         edtPrice.setText(price);
-        edtPrice.setText(description);
+        edtDescription.setText(description);
 
         btnUpdate.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -62,7 +62,7 @@ public class UpdateActivity extends AppCompatActivity {
     @SuppressLint("StaticFieldLeak")
     private void updateTodoToDatabase() {
         final String name = edtName.getText().toString();
-        final int price = Integer.parseInt(edtPrice.getText().toString());
+        final String price = edtPrice.getText().toString();
         final String description = edtDescription.getText().toString();
 
         new AsyncTask<Void, Void, Void>() {

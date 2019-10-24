@@ -45,7 +45,7 @@ public class AddBudgetActivity extends AppCompatActivity {
     @SuppressLint("StaticFieldLeak")
     private void addTodoToDatabase() {
         final String name = edtName.getText().toString();
-        final int price = Integer.parseInt(editPrice.getText().toString());
+        final String price = editPrice.getText().toString();
         final String description = editDescription.getText().toString();
         if (name.isEmpty()) {
             Toast.makeText(this, "Title must not null", Toast.LENGTH_SHORT).show();

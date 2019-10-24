@@ -29,7 +29,7 @@ public class TodoAdapter extends RecyclerView.Adapter<TodoAdapter.TodoViewHolder
     @Override
     public void onBindViewHolder(@NonNull TodoViewHolder holder, int position) {
         holder.textName.setText(todos.get(position).getNameBudget());
-        holder.textPrice.setInputType(todos.get(position).getPriceBudget());
+        holder.textPrice.setText(todos.get(position).getPriceBudget());
         holder.textDescription.setText(todos.get(position).getDescriptionBudget());
     }
 
